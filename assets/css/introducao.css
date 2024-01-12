@@ -1,62 +1,126 @@
 .introducao {
-    align-items: center;
+  align-items: center;
 }
 
 .introducao h1 {
-    font-size: 4.5rem;
-    line-height: 1.125;
-    margin-bottom: 30px;
-    position: relative;
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 .introducao h1::before {
-    content: "";
-    display: block;
-    width: 130px;
-    height: 100px;
-    background: url("../imgs/forma-abstrata-removebg-preview.png") no-repeat center;
-    position: absolute;
-    top: -35px;
-    left: -70px;
-    z-index: -1;
-    
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../imgs/forma-abstrata-removebg-preview.png") no-repeat
+    center;
+  position: absolute;
+  top: -35px;
+  left: -70px;
+  z-index: -1;
 }
 
 .introducao p {
-    font-size: 1.5rem;
-    color: #525252;
+  font-size: 1.5rem;
+  color: #525252;
 }
 
-@media(max-width:1000px){
-    .introducao h1 {
-        font-size: 3rem;
-    }
+@media (max-width: 1000px) {
+  .introducao h1 {
+    font-size: 3rem;
+  }
 }
 
- .introducao img{
-    border-radius: 100%;
+.introducao img {
+  border-radius: 100%;
 }
 
-@media(max-width:800px){
-    .introducao {
-        grid-template-columns: 1fr 1fr;
-    }
-    .introducao h1 {
-        font-size: 2rem;
-    }
-    .introducao h1::before {
-        width: 30px;
-        height: 10px;
-        left: 0px;
-        margin-top: 25px;
-    }
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+  }
+  .introducao h1 {
+    font-size: 2rem;
+  }
+  .introducao h1::before {
+    width: 30px;
+    height: 10px;
+    left: 0px;
+    margin-top: 25px;
+  }
 }
 
-@media(max-width:400px){
-    .introducao {
-        grid-template-columns: 1fr;
-    }
-    .introducao img {
-        display: none;
-    }
+@media (max-width: 400px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .introducao img {
+    display: block;
+  }
+  .introducao p {
+    margin-bottom: 40px;
+  }
+  .img-avatar {
+    width: 50%;
+  }
+
+  .logo-marca {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+  .carousel-navigation{
+    width: 100%;
+    display: flex;
+    visibility: visible;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .prev-slide{
+    display: flex;
+    margin: auto;
+    margin-left: auto;
+  }
+  .next-slide{
+    display: flex;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  .slide img{
+    display: block;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+ }
+ .prev-slide:hover,
+.next-slide:hover {
+  color: #555;
+  transition: ease-in-out 0.3s;
+}
+.prev-slide:active,
+.next-slide:active {
+  opacity: 0.6;
+  visibility: hidden;
+}
+
+.img-nodejs{
+    margin-top: 65px;
+   
+    
+}
+
+.img-react{
+    
+margin-left: -7px;
+}
 }
