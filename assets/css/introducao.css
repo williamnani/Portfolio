@@ -131,4 +131,10 @@
     margin-left: -7px;
     margin-bottom: 5px;
   }
+
+  .img-html,
+  .img-css,
+  .img-js{
+    margin-left: -5px;
+  }
 }
